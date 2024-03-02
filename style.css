@@ -1,5 +1,5 @@
 #calculator-container {
-    max-width: 400px; 
+    max-width: 220px; 
     margin-left: 20px;
     border: 2px solid #333;
     border-radius: 5px;
@@ -9,14 +9,17 @@
   
 #display {
     width: 200px;
-    height: 40px;
+    height: 23px;
     font-size: 20px;
     text-align: right;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
+    padding: 10px;
+    border: 2px solid #333;
+    
 }
 
 #button-container {
-    max-width: 400px;
+    width: 200px;
     margin: 0 auto;
     border: 2px solid #333;
     border-radius: 5px;

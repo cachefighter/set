@@ -5,17 +5,20 @@ const display = document.getElementById('display');
 let displayValue = '0';
 let firstOperand = null;
 let operator = null;
+let isLastButtonAnOperator = false;
 
 // Number buttons
 const numberButtons = document.querySelectorAll('.number');
 numberButtons.forEach(button => {
   button.addEventListener('click', () => {
-    if (!isNaN(displayValue)) {
+    // if (!isNaN(displayValue)) {
+    if (displayValue === '0' || isLastButtonAnOperator) {
       displayValue = button.textContent;
     } else {
       displayValue += button.textContent;
     }
     updateDisplay();
+    isLastButtonAnOperator = false;
   });
 });
 
@@ -26,6 +29,7 @@ operatorButtons.forEach(button => {
     firstOperand = displayValue;
     operator = button.textContent;
     updateDisplay();
+    isLastButtonAnOperator = true;
   });
 });
 
