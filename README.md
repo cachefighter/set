@@ -1,4 +1,4 @@
 # set
 
+Calc - Simple calculator app in JS & HTML
 
-test test test test
