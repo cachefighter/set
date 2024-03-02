@@ -1,0 +1,47 @@
+#calculator-container {
+    max-width: 400px; 
+    margin-left: 20px;
+    border: 2px solid #333;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+  
+#display {
+    width: 200px;
+    height: 40px;
+    font-size: 20px;
+    text-align: right;
+    margin-bottom: 10px;
+}
+
+#button-container {
+    max-width: 400px;
+    margin: 0 auto;
+    border: 2px solid #333;
+    border-radius: 5px;
+    padding: 10px;
+}
+  
+#buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    grid-template-areas: 
+    "ac plusminus percent divide"
+    "seven eight nine multiply"
+    "four five six minus"
+    "one two three plus"
+    "zero zero decimal equals";
+}
+  
+#equals {
+    grid-area: equals;
+    /* grid-column: span 2; */
+}
+
+button {
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+}
